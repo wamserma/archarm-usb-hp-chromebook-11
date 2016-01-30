@@ -28,9 +28,14 @@ pacman -S screen packer base-devel git gnupg openvpn wicd wicd-gtk mlocate cifs-
 pacman -S geany libreoffice-fresh firefox mutt mupdf lynx mpg123
 pacman -S llvm r 
 
+# from aur: remarkable
+
 # more audio
 pacman -S pulseaudio pulseaudio-alsa
 
 # the non-10-bit libc264 for vlc
 pacman -S libx264
 pacman -S vlc
+
+# fonts I like
+adobe-source-code-pro-fonts
