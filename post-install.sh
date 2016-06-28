@@ -7,7 +7,7 @@ if !(which wget)
 then
 	pacman -Sy wget
 fi
-pacman -S ttf-dejavu lxde xorg-server xorg-xinit xorg-server-utils xterm alsa-utils xf86-video-fbdev xf86-input-libinput
+pacman -S ttf-dejavu lxde xorg-server xorg-xinit xorg-server-utils xterm alsa-utils xf86-video-fbdev xf86-input-libinput gvfs
 echo "exec startlxde" > ~/.xinitrc
 systemctl enable lxdm.service
 
