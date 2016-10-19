@@ -1,7 +1,7 @@
 TL;DR:
 ======
 
-Use these directions to install to a USB stick, then just load splat.sh (http://git.io/vcNSH) and run it to install to eMMC.
+Use these directions to install to a USB stick, then just load splat.sh (https://git.io/vPHZ0) and run it to install to eMMC.
 
 You get the default ALARM user accounts. (root/root and alarm/alarm).
 
@@ -37,7 +37,7 @@ wifi-menu mlan0
 Then, download and run the install script, but this time on the internal storage:
 ```
 pacman -Syy wget
-wget http://git.io/vcNSH -O splat.sh
+wget https://git.io/vPHZ0 -O splat.sh
 chmod +x splat.sh
 ./splat.sh /dev/mmcblk0
 ```
