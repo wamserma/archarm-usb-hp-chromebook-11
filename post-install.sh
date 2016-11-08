@@ -24,7 +24,7 @@ wget ${REPOPATH}10-monitor.conf
 wget ${REPOPATH}50-touchpad.conf
 
 # other useful programs/software I use often
-pacman -S screen packer base-devel git gnupg openvpn wicd wicd-gtk mlocate cifs-utils pv rsync ntfs-3g clusterssh tarsnap
+pacman -S screen packer base-devel git gnupg openvpn wicd wicd-gtk mlocate cifs-utils pv rsync ntfs-3g clusterssh
 pacman -S geany libreoffice-fresh firefox firefox-i18n-de mutt mupdf lynx mpg123
 pacman -S llvm r pari
 
@@ -41,4 +41,5 @@ pacman -S vlc
 pacman -S adobe-source-code-pro-fonts
 
 # backup!
+pacman -S cronie tarsnap
 packer -S acts
