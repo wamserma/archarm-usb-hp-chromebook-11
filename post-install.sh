@@ -38,4 +38,7 @@ pacman -S libx264
 pacman -S vlc
 
 # fonts I like
-adobe-source-code-pro-fonts
+pacman -S adobe-source-code-pro-fonts
+
+# backup!
+packer -S acts
