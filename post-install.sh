@@ -43,3 +43,6 @@ pacman -S adobe-source-code-pro-fonts
 # backup!
 pacman -S cronie tarsnap
 packer -S acts
+systemctl enable cronie
+systemctl start cronie
+echo configure acts and add to /etc/anacrontab 
