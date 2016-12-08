@@ -40,6 +40,13 @@ pacman -S vlc
 # fonts I like
 pacman -S adobe-source-code-pro-fonts
 
+# MTA
+# https://flexion.org/posts/2013-03-nullmailer-on-arch-linux/
+# use a special SMTP account for outgoing mail
+pacman -S nullmailer
+echo "set up /etc/nullmailer/remotes"
+echo "set up /etc/nullmailer/defaultdomain"
+
 # backup!
 pacman -S cronie tarsnap
 packer -S acts
