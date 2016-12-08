@@ -45,4 +45,4 @@ pacman -S cronie tarsnap
 packer -S acts
 systemctl enable cronie
 systemctl start cronie
-echo configure acts and add to /etc/anacrontab 
+echo "configure acts and add to /etc/anacrontab"
