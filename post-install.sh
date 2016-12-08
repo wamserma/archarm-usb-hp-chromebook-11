@@ -46,6 +46,8 @@ pacman -S adobe-source-code-pro-fonts
 pacman -S nullmailer
 echo "set up /etc/nullmailer/remotes"
 echo "set up /etc/nullmailer/defaultdomain"
+echo "set /etc/nullmailer/allmailfrom to your relay email-account"
+echo "set /etc/nullmailer/adminaddr to an address where you want to catch all local deliveries"
 
 # backup!
 pacman -S cronie tarsnap
