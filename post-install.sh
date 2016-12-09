@@ -24,9 +24,17 @@ wget ${REPOPATH}10-monitor.conf
 wget ${REPOPATH}50-touchpad.conf
 
 # other useful programs/software I use often
-pacman -S screen packer base-devel git gnupg openvpn wicd wicd-gtk mlocate cifs-utils pv rsync ntfs-3g clusterssh diffuse
+pacman -S screen base-devel git gnupg openvpn wicd wicd-gtk mlocate cifs-utils pv rsync ntfs-3g clusterssh diffuse
 pacman -S geany libreoffice-fresh firefox firefox-i18n-de mutt mupdf lynx mpg123
 pacman -S llvm r pari
+
+# apacman from aur
+pushd /tmp
+wget https://aur.archlinux.org/cgit/aur.git/snapshot/apacman.tar.gz
+tar xf apacman.tar.gz && cd apacman 
+makepkg -A
+pacman -U apacman*.pkg.tar.xz
+popd
 
 # from aur: remarkable
 
@@ -51,7 +59,7 @@ echo "set /etc/nullmailer/adminaddr to an address where you want to catch all lo
 
 # backup!
 pacman -S cronie tarsnap
-packer -S acts
+apacman -S acts
 systemctl enable cronie
 systemctl start cronie
 echo "configure acts and add to /etc/anacrontab"
