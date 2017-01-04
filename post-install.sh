@@ -36,7 +36,7 @@ makepkg -A
 pacman -U apacman*.pkg.tar.xz
 popd
 
-# from aur: remarkable
+# from aur: haroopad;remarkable killed a file because it had issues with encoding
 
 # more audio
 pacman -S pulseaudio pulseaudio-alsa
